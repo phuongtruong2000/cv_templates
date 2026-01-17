@@ -1,0 +1,734 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile</title>
+  <link rel="icon" href="./favicon_abstract.png" type="image/png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar-wrap">
+          <img class="avatar" src="./avatar.jpg" alt="Avatar" />
+          <span class="avatar-badge" title="Verified">✓</span>
+        </div>
+
+        <h1 class="name" data-i18n="sidebar.name"></h1>
+        <p class="handle" data-i18n="sidebar.title"></p>
+
+        <div class="tags tag-spacebetween">
+          <span class="tag w-100" data-i18n="sidebar.tags.skills"></span>
+          <span class="tag w-48" data-i18n="sidebar.tags.learning"></span>
+          <span class="tag w-48" data-i18n="sidebar.tags.performance"></span>
+          <span class="tag w-48" data-i18n="sidebar.tags.product"></span>
+          <span class="tag w-48" data-i18n="sidebar.tags.ui"></span>
+          <span class="tag w-100" data-i18n="sidebar.tags.personal"></span>
+        </div>
+
+        <button class="btn btn-primary" data-i18n="sidebar.downloadCv"></button>
+
+        <div class="meta">
+          <div class="meta-row">
+            <span class="ic">🎂</span>
+            <span data-i18n="sidebar.birth"></span>
+          </div>
+
+          <div class="meta-row">
+            <span class="ic">👥</span>
+            <span data-i18n="sidebar.gender"></span>
+          </div>
+
+          <div class="meta-row">
+            <span class="ic">📞</span>
+            <a class="link" href="tel:0969955099">096 9955 099</a>
+          </div>
+
+          <div class="meta-row">
+            <span class="ic">📧</span>
+            <a class="link" href="mailto:phuongtruongfpt@gmail.com">phuongtruongfpt@gmail.com</a>
+          </div>
+
+          <div class="meta-row">
+            <span class="ic">💼</span>
+            <a class="link" href="tel:0969955099">Zalo: 0969955099 (Rain)</a>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="sidebar-section">
+          <h3 class="section-title" data-i18n="sidebar.languages.title"></h3>
+          <div class="tags-education">
+            <span class="tag-education" data-i18n="sidebar.languages.en"></span>
+            <span class="tag-education" data-i18n="sidebar.languages.ja"></span>
+          </div>
+        </div>
+
+        <!-- Salary -->
+        <div class="sidebar-section">
+          <h3 class="section-title" data-i18n="sidebar.salary.title"></h3>
+          <div class="meta">
+            <div class="meta-row">
+              <span class="ic">💰</span>
+              <span data-i18n="sidebar.salary.value"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT: Main -->
+    <main class="main">
+      <!-- Top nav -->
+      <header class="topbar">
+        <nav class="tabs" role="tablist" aria-label="Profile sections">
+          <button class="tab is-active" data-tab="intro" data-i18n="tabs.intro"></button>
+          <button class="tab" data-tab="skills" data-i18n="tabs.skills"></button>
+          <button class="tab" data-tab="experience" data-i18n="tabs.experience"></button>
+          <button class="tab" data-tab="education" data-i18n="tabs.education"></button>
+          <button class="tab" data-tab="products" data-i18n="tabs.products"></button>
+        </nav>
+
+        <div class="topbar-actions">
+          <div class="lang-switch">
+            <button class="icon-btn" id="langBtn" title="Ngôn ngữ">🌐</button>
+            <div class="lang-menu">
+              <button data-lang="vi">
+                <img src="https://flagcdn.com/w20/vn.png" alt="VN" />
+                Tiếng Việt
+              </button>
+
+              <button data-lang="en">
+                <img src="https://flagcdn.com/w20/gb.png" alt="EN" />
+                English
+              </button>
+              <button data-lang="ja">
+                <img src="https://flagcdn.com/w20/jp.png" alt="JP" />
+                日本語
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="tab-content">
+        <section class="tab-panel is-active intro" data-tab="intro">
+          <section class="hero">
+            <div class="hero-card">
+              <div class="hero-cover">
+                <div class="cover-overlay">
+                  <div class="cover-kicker" data-i18n="hero.kicker"></div>
+
+                  <div class="cover-title">
+                    <div class="line1" data-i18n="hero.greeting"></div>
+                    <div class="line2" data-i18n="hero.name"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-body">
+                <p class="muted" data-i18n="hero.subtitle"></p>
+                <p data-i18n="hero.p1"></p>
+                <p data-i18n="hero.p2"></p>
+                <p data-i18n="hero.p3"></p>
+              </div>
+            </div>
+          </section>
+
+          <div class="card mt-10">
+            <div class="card-h">
+              <h3 data-i18n="collaboration.title">SẴN SÀNG HỢP TÁC</h3>
+            </div>
+
+            <div class="meta">
+              <div class="meta-row">
+                <span class="ic">💼</span>
+                <span data-i18n="collaboration.p1">
+                </span>
+              </div>
+
+              <div class="meta-row">
+                <span class="ic">🤝</span>
+                <span data-i18n="collaboration.p2">
+                </span>
+              </div>
+
+              <div class="meta-row">
+                <span class="ic">🧭</span>
+                <span data-i18n="collaboration.p3">
+                </span>
+              </div>
+
+              <div class="meta-row">
+                <span class="ic">📍</span>
+                <span data-i18n="collaboration.p4">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <section class="grid mt-10">
+            <div class="card">
+              <h3 class="section-title" data-i18n="strengths.title"></h3>
+
+              <div class="meta strength-list">
+                <div class="meta-row">
+                  <span class="ic">✅</span>
+                  <span data-i18n="strengths.items.idea"></span>
+                </div>
+
+                <div class="meta-row">
+                  <span class="ic">✅</span>
+                  <span data-i18n="strengths.items.tooling"></span>
+                </div>
+
+                <div class="meta-row">
+                  <span class="ic">✅</span>
+                  <span data-i18n="strengths.items.design"></span>
+                </div>
+              </div>
+            </div>
+            <!-- Interests -->
+            <div class="card">
+              <h3 class="section-title" data-i18n="careerGoal.title"></h3>
+
+              <div class="meta strength-list">
+                <div class="meta-row">
+                  <span class="ic">🎯</span>
+                  <span data-i18n="careerGoal.items.shortTerm"></span>
+                </div>
+
+                <div class="meta-row">
+                  <span class="ic">🚀</span>
+                  <span data-i18n="careerGoal.items.longTerm"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- Educations -->
+        <section class="tab-panel education" data-tab="education">
+          <ol class="edu-timeline">
+            <li class="edu-item">
+              <span class="edu-dot" aria-hidden="true"></span>
+              <article class="edu-card">
+                <div class="edu-head">
+                  <div class="edu-left">
+                    <h3 class="edu-level" data-i18n="education.items.future.level"></h3>
+                    <div class="edu-school" data-i18n="education.items.future.school"></div>
+                  </div>
+                  <span class="edu-time" data-i18n="education.items.future.time"></span>
+                </div>
+
+                <ul class="edu-points">
+                  <li data-i18n="education.items.future.points.p1"></li>
+                  <li data-i18n="education.items.future.points.p2"></li>
+                </ul>
+              </article>
+            </li>
+            <li class="edu-item">
+              <span class="edu-dot" aria-hidden="true"></span>
+              <article class="edu-card">
+                <div class="edu-head">
+                  <div class="edu-left">
+                    <h3 class="edu-level" data-i18n="education.items.university.level"></h3>
+                    <div class="edu-school" data-i18n="education.items.university.school"></div>
+                  </div>
+                  <span class="edu-time" data-i18n="education.items.university.time"></span>
+                </div>
+
+                <ul class="edu-points">
+                  <li data-i18n="education.items.university.points.gpa"></li>
+                  <li data-i18n="education.items.university.points.project"></li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <section class="tab-panel" data-tab="skills">
+          <div class="skills-grid">
+            <!-- Card 1 -->
+            <article class="skills-card">
+              <h3 class="skills-card-title">Front-End</h3>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">CSS/Sass/SCSS</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Angular</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Bootstrap</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Tailwind CSS</span>
+                  <span class="skill-val" data-value="65">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 65%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">ReactJS</span>
+                  <span class="skill-val" data-value="50">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 50%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">AngularJS</span>
+                  <span class="skill-val" data-value="50">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 50%"></span>
+                </div>
+              </div>
+
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Three.js</span>
+                  <span class="skill-val" data-value="50">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 50%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Canvas</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Animation (CSS/JS)</span>
+                  <span class="skill-val" data-value="60">60%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 60%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Chart.js</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">NPM/Yarn</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Vite/Webpack</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="skills-card">
+              <h3 class="skills-card-title">Back-End</h3>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">.NET</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">ASP.NET / .NET Core / .NET 8+</span>
+                  <span class="skill-val" data-value="90">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">VB.NET</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">Node.js (Express)</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">MS SQL Server</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-val" data-value="70">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 70%"></span>
+                </div>
+              </div>
+              <h3 class="skills-card-title">AI & Machine Learning</h3>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Machine Learning Fundamentals</span>
+                  <span class="skill-val" data-value="80">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Deep Learning (Basic)</span>
+                  <span class="skill-val" data-value="50">50%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 50%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">LLMs & Prompt Engineering</span>
+                  <span class="skill-val" data-value="65">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 65%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">AI Agents & Workflow Automation</span>
+                  <span class="skill-val" data-value="65">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 65%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Cloud AI (AWS / Azure)</span>
+                  <span class="skill-val" data-value="55">55%</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 55%"></span>
+                </div>
+              </div>
+              <h3 class="skills-card-title">Tools</h3>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Visual Studio / Visual Studio Code</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 100%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Git / GitHub / GitLab</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 100%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">NPM / Yarn / Composer / NuGet</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 100%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-top">
+                  <span class="skill-name mt-2">Backlog</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" style="--val: 100%"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" data-tab="experience">
+          <div class="exp-section">
+            <ol class="exp-timeline">
+              <!-- Item 1 -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.onetech.company"></div>
+                      <div class="exp-role" data-i18n="experience.onetech.role"></div>
+                    </div>
+
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.onetech.time"></span>
+                    </div>
+                  </div>
+
+                  <ul class="exp-list">
+                    <li data-i18n="experience.onetech.items.calendar"></li>
+                    <li data-i18n="experience.onetech.items.uiux"></li>
+                    <li data-i18n="experience.onetech.items.projects"></li>
+                    <li data-i18n="experience.onetech.items.tech"></li>
+                    <li data-i18n="experience.onetech.items.teamwork"></li>
+                    <li data-i18n="experience.onetech.items.foundation"></li>
+                    <li class="exp-link" data-i18n="experience.onetech.items.link"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.vjp.company"></div>
+                      <div class="exp-role" data-i18n="experience.vjp.role"></div>
+                    </div>
+
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.vjp.time"></span>
+                    </div>
+                  </div>
+
+                  <ul class="exp-list">
+                    <li data-i18n="experience.vjp.items.jpProcess"></li>
+                    <li data-i18n="experience.vjp.items.offshore"></li>
+                    <li data-i18n="experience.vjp.items.projects"></li>
+                    <li data-i18n="experience.vjp.items.uiux"></li>
+                    <li data-i18n="experience.vjp.items.frontend"></li>
+                    <li data-i18n="experience.vjp.items.backend"></li>
+                    <li data-i18n="experience.vjp.items.training"></li>
+                    <li class="exp-link" data-i18n="experience.vjp.items.link"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.katsura.company"></div>
+                      <div class="exp-role" data-i18n="experience.katsura.role"></div>
+                    </div>
+
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.katsura.time"></span>
+                    </div>
+                  </div>
+
+                  <ul class="exp-list">
+                    <li data-i18n="experience.katsura.items.uiux"></li>
+                    <li data-i18n="experience.katsura.items.report"></li>
+                    <li data-i18n="experience.katsura.items.vbnet"></li>
+                    <li data-i18n="experience.katsura.items.volume"></li>
+                    <li data-i18n="experience.katsura.items.testing"></li>
+                    <li data-i18n="experience.katsura.items.frontend"></li>
+                    <li data-i18n="experience.katsura.items.backend"></li>
+                  </ul>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="tab-panel" data-tab="products">
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="tab-panel" data-tab="design">
+          <div class="design-grid" id="designGrid"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <dialog class="product-modal" id="productModal" aria-label="Detail">
+    <div class="modal-shell">
+      <header class="modal-header">
+        <h3 class="modal-title"></h3>
+
+        <button class="modal-close" type="button" aria-label="Close" data-close>✕</button>
+      </header>
+
+      <div class="modal-grid">
+        <div class="modal-media">
+          <div class="img-scroll" id="imgScroll">
+            <img class="modal-img" id="modalImg" src="" alt="" />
+          </div>
+
+          <div class="img-zoombar" aria-label="Zoom controls">
+            <button type="button" class="zoom-btn" data-zoom-out>-</button>
+            <span class="zoom-level" id="zoomLevel">100%</span>
+            <button type="button" class="zoom-btn" data-zoom-in>+</button>
+            <button type="button" class="zoom-btn" data-zoom-reset>Reset</button>
+          </div>
+
+          <span class="modal-badge" hidden></span>
+        </div>
+
+        <div class="modal-content">
+          <p class="modal-desc"></p>
+          <div class="modal-meta"></div>
+          <div class="modal-section" data-section="features" hidden>
+            <div class="modal-label">Features</div>
+            <ul class="modal-features"></ul>
+          </div>
+          <div class="modal-section" data-section="features" hidden>
+            <div class="modal-label">Technical</div>
+            <div class="modal-tech"></div>
+          </div>
+          <div class="modal-actions">
+            <a class="modal-btn primary" href="#" target="_blank" rel="noopener">Xem demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="design-modal" id="designModal" aria-label="Design detail">
+    <button class="dmodal-close" type="button" aria-label="Đóng">✕</button>
+
+    <div class="dmodal-grid">
+      <div class="dmodal-media">
+        <img class="dmodal-img" src="" alt="" />
+        <span class="dmodal-badge" hidden></span>
+      </div>
+
+      <div class="dmodal-content">
+        <h3 class="dmodal-title"></h3>
+        <p class="dmodal-desc"></p>
+
+        <div class="dmodal-meta">
+          <span class="dmodal-loc"></span>
+          <span class="dmodal-sep">•</span>
+          <span class="dmodal-rate">
+            <span class="dmodal-star">★</span>
+            <span class="dmodal-rateval"></span>
+          </span>
+        </div>
+
+        <div class="dmodal-actions">
+          <a class="dmodal-btn primary" href="#" target="_blank" rel="noopener">View</a>
+          <button class="dmodal-btn" type="button" data-close>Đóng</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./local.js"></script>
+</body>
+
+</html>
