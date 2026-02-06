@@ -82,7 +82,7 @@ const messages = {
         },
 
         future: {
-          level: "Future Direction",
+          level: "Future direction",
           school: "Academic & Professional Certifications",
           time: "Planning",
           points: {
