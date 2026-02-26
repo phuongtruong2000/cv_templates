@@ -15,7 +15,7 @@
     <aside class="sidebar">
       <div class="profile-card">
         <div class="avatar-wrap">
-          <img class="avatar" src="./avatar.jpg" alt="Avatar" />
+          <img class="avatar" src="./avatar.png" alt="Avatar" />
           <span class="avatar-badge" title="Verified">✓</span>
         </div>
 
@@ -31,7 +31,8 @@
           <span class="tag w-100" data-i18n="sidebar.tags.personal"></span>
         </div>
 
-        <button class="btn btn-primary" data-i18n="sidebar.downloadCv"></button>
+        <button class="btn btn-primary" data-i18n="sidebar.downloadCv"
+          onclick="window.open('./truong_anh_phuong_cv_2026.pdf', '_blank')"></button>
 
         <div class="meta">
           <div class="meta-row">
@@ -94,7 +95,7 @@
           <button class="tab" data-tab="products" data-i18n="tabs.products"></button>
         </nav>
 
-        <div class="topbar-actions">
+        <!-- <div class="topbar-actions">
           <div class="lang-switch">
             <button class="icon-btn" id="langBtn" title="Ngôn ngữ">🌐</button>
             <div class="lang-menu">
@@ -113,7 +114,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </header>
       <div class="tab-content">
         <section class="tab-panel is-active intro" data-tab="intro">
@@ -561,61 +562,7 @@
         <section class="tab-panel" data-tab="experience">
           <div class="exp-section">
             <ol class="exp-timeline">
-              <!-- Item 1 -->
-              <li class="exp-item">
-                <span class="exp-dot" aria-hidden="true"></span>
-                <article class="exp-card">
-                  <div class="exp-head">
-                    <div class="exp-left">
-                      <div class="exp-company" data-i18n="experience.onetech.company"></div>
-                      <div class="exp-role" data-i18n="experience.onetech.role"></div>
-                    </div>
-
-                    <div class="exp-meta">
-                      <span class="exp-date" data-i18n="experience.onetech.time"></span>
-                    </div>
-                  </div>
-
-                  <ul class="exp-list">
-                    <li data-i18n="experience.onetech.items.calendar"></li>
-                    <li data-i18n="experience.onetech.items.uiux"></li>
-                    <li data-i18n="experience.onetech.items.projects"></li>
-                    <li data-i18n="experience.onetech.items.tech"></li>
-                    <li data-i18n="experience.onetech.items.teamwork"></li>
-                    <li data-i18n="experience.onetech.items.foundation"></li>
-                    <li class="exp-link" data-i18n="experience.onetech.items.link"></li>
-                  </ul>
-                </article>
-              </li>
-
-              <!-- Item 2 -->
-              <li class="exp-item">
-                <span class="exp-dot" aria-hidden="true"></span>
-                <article class="exp-card">
-                  <div class="exp-head">
-                    <div class="exp-left">
-                      <div class="exp-company" data-i18n="experience.vjp.company"></div>
-                      <div class="exp-role" data-i18n="experience.vjp.role"></div>
-                    </div>
-
-                    <div class="exp-meta">
-                      <span class="exp-date" data-i18n="experience.vjp.time"></span>
-                    </div>
-                  </div>
-
-                  <ul class="exp-list">
-                    <li data-i18n="experience.vjp.items.jpProcess"></li>
-                    <li data-i18n="experience.vjp.items.offshore"></li>
-                    <li data-i18n="experience.vjp.items.projects"></li>
-                    <li data-i18n="experience.vjp.items.uiux"></li>
-                    <li data-i18n="experience.vjp.items.frontend"></li>
-                    <li data-i18n="experience.vjp.items.backend"></li>
-                    <li data-i18n="experience.vjp.items.training"></li>
-                    <li class="exp-link" data-i18n="experience.vjp.items.link"></li>
-                  </ul>
-                </article>
-              </li>
-
+              <!-- Item 1: Katsura -->
               <li class="exp-item">
                 <span class="exp-dot" aria-hidden="true"></span>
                 <article class="exp-card">
@@ -631,13 +578,164 @@
                   </div>
 
                   <ul class="exp-list">
-                    <li data-i18n="experience.katsura.items.uiux"></li>
-                    <li data-i18n="experience.katsura.items.report"></li>
-                    <li data-i18n="experience.katsura.items.vbnet"></li>
-                    <li data-i18n="experience.katsura.items.volume"></li>
-                    <li data-i18n="experience.katsura.items.testing"></li>
-                    <li data-i18n="experience.katsura.items.frontend"></li>
+                    <li data-i18n="experience.katsura.items.domain"></li>
+                    <li data-i18n="experience.katsura.items.leader"></li>
                     <li data-i18n="experience.katsura.items.backend"></li>
+                    <li data-i18n="experience.katsura.items.vbnet"></li>
+                    <li data-i18n="experience.katsura.items.frontend"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 2: Poseidon -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.poseidon.company"></div>
+                      <div class="exp-role" data-i18n="experience.poseidon.role"></div>
+                    </div>
+
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.poseidon.time"></span>
+                    </div>
+                  </div>
+
+                  <ul class="exp-list">
+                    <li data-i18n="experience.poseidon.items.overview"></li>
+                    <li data-i18n="experience.poseidon.items.ai"></li>
+                    <li data-i18n="experience.poseidon.items.vector"></li>
+                    <li data-i18n="experience.poseidon.items.stack"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 3: Inter-K -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.interk.company"></div>
+                      <div class="exp-role" data-i18n="experience.interk.role"></div>
+                    </div>
+
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.interk.time"></span>
+                    </div>
+                  </div>
+
+                  <ul class="exp-list">
+                    <li data-i18n="experience.interk.items.itenka"></li>
+                    <li data-i18n="experience.interk.items.iems"></li>
+                    <li data-i18n="experience.interk.items.helpdesk"></li>
+                    <li data-i18n="experience.interk.items.server"></li>
+                    <li data-i18n="experience.interk.items.network"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 4: Beradar -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.beradar.company"></div>
+                      <div class="exp-role" data-i18n="experience.beradar.role"></div>
+                    </div>
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.beradar.time"></span>
+                    </div>
+                  </div>
+                  <ul class="exp-list">
+                    <li data-i18n="experience.beradar.items.automation"></li>
+                    <li data-i18n="experience.beradar.items.stack"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 5: Personal Projects 2020 -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.personal2020.company"></div>
+                      <div class="exp-role" data-i18n="experience.personal2020.role"></div>
+                    </div>
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.personal2020.time"></span>
+                    </div>
+                  </div>
+                  <ul class="exp-list">
+                    <li data-i18n="experience.personal2020.items.projects"></li>
+                    <li data-i18n="experience.personal2020.items.automation"></li>
+                    <li data-i18n="experience.personal2020.items.stack"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 6: Silicon Stack -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.siliconstack.company"></div>
+                      <div class="exp-role" data-i18n="experience.siliconstack.role"></div>
+                    </div>
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.siliconstack.time"></span>
+                    </div>
+                  </div>
+                  <ul class="exp-list">
+                    <li data-i18n="experience.siliconstack.items.ecommerce"></li>
+                    <li data-i18n="experience.siliconstack.items.modules"></li>
+                    <li data-i18n="experience.siliconstack.items.stack"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 7: NEC -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.nec.company"></div>
+                      <div class="exp-role" data-i18n="experience.nec.role"></div>
+                    </div>
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.nec.time"></span>
+                    </div>
+                  </div>
+                  <ul class="exp-list">
+                    <li data-i18n="experience.nec.items.foodorder"></li>
+                    <li data-i18n="experience.nec.items.highway"></li>
+                    <li data-i18n="experience.nec.items.stack"></li>
+                  </ul>
+                </article>
+              </li>
+
+              <!-- Item 8: Wisky -->
+              <li class="exp-item">
+                <span class="exp-dot" aria-hidden="true"></span>
+                <article class="exp-card">
+                  <div class="exp-head">
+                    <div class="exp-left">
+                      <div class="exp-company" data-i18n="experience.wisky.company"></div>
+                      <div class="exp-role" data-i18n="experience.wisky.role"></div>
+                    </div>
+                    <div class="exp-meta">
+                      <span class="exp-date" data-i18n="experience.wisky.time"></span>
+                    </div>
+                  </div>
+                  <ul class="exp-list">
+                    <li data-i18n="experience.wisky.items.internal"></li>
+                    <li data-i18n="experience.wisky.items.pos"></li>
+                    <li data-i18n="experience.wisky.items.stack"></li>
                   </ul>
                 </article>
               </li>
